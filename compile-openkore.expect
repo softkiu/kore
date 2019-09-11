@@ -1,0 +1,8 @@
+spawn /openkore/openkore.pl --no-connect
+expect "Please choose a master server to connect to."
+send "8\r"
+expect "Enter your answer:"
+send "8\r"
+expect "Initialized, use 'connect' to continue"
+send "quit\r"
+expect eof
